@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -7,7 +8,7 @@
  */
 int main(void)
 {
-  char abc[30]= "abcdefghijklmnñopqrstuvwxyz";
+  char abc[30]= "abcdefghijklmnopqrstuvwxyz";
   int i;
   for(i = 0; i < 26; i++)
     putchar(abc[i]);
