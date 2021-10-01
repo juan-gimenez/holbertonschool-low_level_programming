@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-char abc[60] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWKYZ";
+char abc[60] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 int i;
 for (i = 0; i < 52; i++)
 putchar(abc[i]);
