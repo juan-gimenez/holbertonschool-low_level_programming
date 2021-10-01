@@ -7,9 +7,9 @@
  */
 int main(void)
 {
-char ch;
-for(ch=97; ch<= 122; ch++);
-putchar(ch);
-putchar('\n');
+  char abc[30]= "abcdefghijklmnñopqrstuvwxyz";
+  int i;
+  for(i = 0; i < 26; i++)
+    putchar(abc[i]);
 return (0);
 }
