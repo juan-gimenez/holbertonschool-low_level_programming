@@ -9,9 +9,11 @@ int main(void)
 {
 char abc[30] = "abcdefghijklmnopqrstuvwxyz";
 int i;
+
 for (i = 0; i < 26; i++)
+
 if (i != 5 && i != 17)
 putchar(abc[i]);
-else if (NULL)
-return 0;
+putchar('\n');
+return (0);
 }
