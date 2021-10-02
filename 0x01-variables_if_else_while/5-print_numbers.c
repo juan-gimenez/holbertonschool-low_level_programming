@@ -7,10 +7,12 @@
  */
 int main(void)
 {
+char num[120] = "0123456789";
 int i;
-for ( i = 0; i < 10; i++ )
-{
-putchar(i);
-}
+for (i = 0; i < 11; i++)
+if (i < 10)
+putchar(num[i]);
+else
+putchar('\n');
 return (0);
 }
