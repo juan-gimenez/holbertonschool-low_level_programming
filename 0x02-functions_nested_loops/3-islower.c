@@ -6,8 +6,12 @@
  */
 int _islower(int c)
 {
-do { _putchar(49);
-}
-while (c >= 97 && c <= 122);
-return (0);
+  if (c >= 97 && c <= 122)
+    {
+      return (1);
+    }
+  else
+    {
+      return (0);
+    }
 }
