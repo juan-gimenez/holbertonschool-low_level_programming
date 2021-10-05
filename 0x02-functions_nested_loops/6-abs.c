@@ -12,7 +12,7 @@ if (c >= 0)/** not necesary to declare variable*/
 return (c);
 }
 else
-{   
-return (c * -1); 
+{
+return (c * -1);
 }
 }
