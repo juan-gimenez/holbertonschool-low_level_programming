@@ -7,8 +7,7 @@
 
 int _abs(int c)
 {
-int c;
-if (c >= 0)
+if (c >= 0)/** not necesary to declare variable*/
 {
 return (c);
 }
