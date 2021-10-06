@@ -3,7 +3,8 @@
 /**
  * print_to_98 - prints to 98
  * Return: no return
- */
+ * @n: parameter 
+*/
 void print_to_98(int n)
 {
 while (n > 98)
