@@ -11,7 +11,7 @@ int print_last_digit(int c)
 {
 int digitlast;
 digitlast = c % 10;
-if (digitlast > 0)
+if (digitlast => 0)
 {
 _putchar(digitlast);
 }
