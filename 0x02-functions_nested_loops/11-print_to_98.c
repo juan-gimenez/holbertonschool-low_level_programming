@@ -20,5 +20,5 @@ if (n == 98)
 {
 printf("%d", n);
 }
-putchar('\n'´);
+putchar('\n');
 }
