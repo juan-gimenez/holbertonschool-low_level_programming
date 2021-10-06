@@ -17,8 +17,7 @@ _putchar(digitlast);
 }
 else
 {
-_putchar(digitlast + 48);
+_putchar(digitlast);
 }
-_putchar('\n');
 return (digitlast);
 }
