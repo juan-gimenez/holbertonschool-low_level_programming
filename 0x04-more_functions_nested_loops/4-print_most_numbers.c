@@ -12,12 +12,7 @@ int i;
 for (i = 48; i < 58; i++)
 {
 if (i != 6 && i != 9)
-{
 _putchar(i);
 }
-else
-{
 _putchar(10);
-}
-}
 }
