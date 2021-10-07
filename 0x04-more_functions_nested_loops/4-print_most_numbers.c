@@ -9,11 +9,15 @@ void print_most_numbers(void)
 {
 int i;
 
-for (i = 48; i < 58; ch++)
+for (i = 48; i < 58; i++)
 {
 if (i != 6 && i != 9)
 {
-_putchar(ch);
+_putchar(i);
 }
+else
+{
 _putchar(10);
+}
+}
 }
