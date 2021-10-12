@@ -7,10 +7,9 @@
  */
 void print_rev(char *s)
 {
-int i = 99;
-int str[100];
-while (str >= 0)
+int i = 0;
+while (str[i] >= 0)
 {_putchar(str[i]);
-i--; }
+i++; }
 _putchar(10);
 }
