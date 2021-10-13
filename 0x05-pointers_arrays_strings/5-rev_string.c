@@ -9,8 +9,8 @@ void rev_string(char *s)
   int i;
   int j;
   for (i = 0; str[i];i++)
-    buffer[i] = str[i]
+    buffer[i] = str[i];
       for (i--; i >= 0;i--)
-         str[j-i] = buffer[i]
+	str[j-i] = buffer[i];
 	   _putchar(buffer[i]);
 }
