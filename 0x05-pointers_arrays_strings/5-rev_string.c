@@ -1,5 +1,3 @@
-
-
 #include "main.h"
 /**
  *
@@ -7,13 +5,16 @@
  **/
 void rev_string(char *s)
 {
-  char buffer[500];
-  int i;
-  int j;
-  j = 0;
-  for (i = 0; s[i];i++)
-    buffer[i] = s[i];
-      for (i--; i >= 0;i--)
-	s[j-i] = buffer[i];
-	   _putchar(buffer[i]);
+int strlen = 0;
+int i;
+int temp;
+while (s[strlen] != '\0'){
+i++;}
+for (i = 0; i < strlen / 2; i++)  
+{
+temp = s[i];
+s[i] = s[strlen - i - 1];
+s[strlen - i - 1] = temp;  
+_putchar(temp);
+}
 }
