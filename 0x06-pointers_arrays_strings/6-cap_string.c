@@ -6,11 +6,11 @@
  *@n: size
  * Return: no return
  */
-char *cap_string(char *)
+char *cap_string(char *str)
 {
-char str[];
 int i;
-for (i = 0; str[i] != NULL; i++)
+for (i = 0; str[i] != '\0'; i++)
+{
 if (i == 0)
 {
 if((str[i] >= 'a' && str[i] <= 'z'))
@@ -20,3 +20,18 @@ continue;
 if (str[i] == ' ')
 {
 i++;
+if (str[i] >= 'a' && str[i] <= 'z')
+{
+str[i] = str[i] - 32;
+continue;
+}
+}
+else
+{
+if(str[i] >= 'A' && str[i] <= 'Z')
+{
+str[i] = str[i] + 32;
+}
+}
+}
+}
