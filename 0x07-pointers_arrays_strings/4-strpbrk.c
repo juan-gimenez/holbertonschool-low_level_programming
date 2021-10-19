@@ -9,7 +9,7 @@ char *_strpbrk(char *s, char *accept)
 {
 int i;
 int j;
-int count;
+int count = 0;
 for (i = 0; s[i] != 0; i++)
 {
 for (j = 0; accept[j] != 0; j++)
@@ -21,13 +21,14 @@ s = s + i;
 break;
 }
 }
-if (c == 1)
+if (count == 1)
 {
 break;
 }
-if (c < 1)
+}
+if (count < 1)
 {
-s = '0';
+*s = '0';
 }
 return (s);
 }
