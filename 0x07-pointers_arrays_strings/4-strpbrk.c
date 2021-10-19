@@ -28,7 +28,7 @@ break;
 }
 if (count < 1)
 {
-*s = '0';
+s = '\0';
 }
 return (s);
 }
