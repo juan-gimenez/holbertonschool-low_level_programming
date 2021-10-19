@@ -1,29 +1,32 @@
 #include "main.h"
 /**
- * _strspn - gets the length of a prefix substring.
- * Return: number of bytes in the initial segment of s
- *@haystack: string
- *@aneedle: second str to find
-*/
-char *_strstr(char *haystack, char *needle)
+ * _strpbrk -  searches a string for any of a set of bytes.
+ * Return: pointer to s that matches
+ *@s: string to find
+ *@accept: string to match
+ */
+char *_strpbrk(char *s, char *accept)
 {
-  int i, j = 0;
-  int nTemp = i;
-  for(i = 0; i<nStrLen-nStrSubLen; i++)
+  int a;
+  int b;
+  int cont = 0;
+  a = 0;
+  while (s[a] != '\0')
     {
-      nTemp = i;
-      for(j=0; j<nStrSubLen; j++)
+      b = 0;
+      while (accept[b] != '\0')
 	{
-
-	  if(str[nTemp]==strSub[j])
+	  if (s[a] == accept[b])
 	    {
-	      if(j==nStrSubLen-1)
-		return 1;
-	      nTemp++;
+              cont++;
+	      s = s + a;
+	      break;
 	    }
-	  else
-	    break;
+	  b++;
 	}
+      if (accept[b] == '\0')
+	break;
+      a++;
     }
-  return (0);
+  return (s);
 }
