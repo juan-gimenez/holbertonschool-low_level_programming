@@ -1,18 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- *
- *
- */
-int main(int argc, char *argv[])
+ *main - prints the number of arguments passed into it.
+ *@argc: number of arguments
+ *@argv: strings passed
+ *Return: 0 success
+*/
+int main(int argc, char *argv[] __attribute__((unused)))
 {
-int i;
- if (argc > 1)
-   {
- for (i = 1; i < argc; i++)
-{
-printf("%s\n", argv[i]);
-}
-}
+printf("%d\n", argc - 1);
 return (0);
 }
