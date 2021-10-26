@@ -18,10 +18,10 @@ if (height == 0 || height < 0)
 {
 return (NULL);
 }
-array = malloc(width * sizeof(int *));
+array = malloc(width * sizeof(int));
 for (i = 0; i < width; i++)
 {
-array [i] = malloc(height * sizeof(int));
+array [i] = malloc(height * sizeof(int *));
 if (array[i] == NULL)
 {
 return (NULL);
