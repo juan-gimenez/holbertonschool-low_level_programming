@@ -6,10 +6,18 @@
  */
 int main(int argc, char *argv[])
 {
-  int i, sum = 0;
-  for (i = 1;i < argc; i++)
-    i = sum + atoi(argv[i]);
-  printf("%d", i);
-  return (0);
-  
+  int i;
+    
+  for (i = 1; i < argc; i++)
+    {
+      if (atoi(argv[i]) == 0)
+	{
+	  putchar(48);
+	  putchar(10);
+	}
+      i = atoi(argv[i]) + atoi(argv[i + 1]);
+	       printf("%d\n", i);
+	       
+    }
+	       return (0);	       
 }
