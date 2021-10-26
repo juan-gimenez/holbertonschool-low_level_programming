@@ -1,0 +1,17 @@
+#include "main.h"
+#include <stdlib.h>
+#include <stdio.h>
+/**
+ *
+ *
+ */
+char *create_array(unsigned int size, char c)
+{
+  char c[size];
+  int *p;
+  *p = malloc(sizeof(char)*size);
+
+  
+  if (size == 0)
+    return (NULL);
+}
