@@ -9,8 +9,8 @@
 */
 int *array_range(int min, int max)
 {
-char *arrayofint;
-int x;
+int *arrayofint;
+int x = 0;
 if (min > max)
 {
 return (NULL);
@@ -22,9 +22,9 @@ return (NULL);
 }
 while  (min <= max)
 {
-arrayofint{x} = min;
+arrayofint[x] = min;
 x++;
-min--;
+min++;
 }
 return (arrayofint);
 }
