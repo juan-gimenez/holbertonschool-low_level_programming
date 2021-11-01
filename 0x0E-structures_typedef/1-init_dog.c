@@ -8,7 +8,7 @@
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-if (d) /** not null */
+if (d != NULL) /** not null */
 {
 d->name = name;
 d->age = age;
