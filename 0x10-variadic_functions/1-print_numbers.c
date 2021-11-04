@@ -14,6 +14,7 @@ va_list ap;
 va_start(ap, n);
 if (separator == NULL)
 {
+
 }
 for (i = 0; i < n; i++)
 {
