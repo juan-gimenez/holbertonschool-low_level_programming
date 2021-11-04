@@ -22,7 +22,7 @@ if (str == NULL)
 printf("(nil)");
 }
 printf("%s", str);
-if (i != n - 1)
+if (i < n - 1)
 {
 if (separator == 0)
 {
