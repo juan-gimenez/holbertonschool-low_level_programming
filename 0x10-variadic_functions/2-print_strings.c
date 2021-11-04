@@ -13,6 +13,8 @@ unsigned int i;
 va_list ap;
 char *str = 0;
 va_start(ap, n);
+
+if (n > 0)
 for (i = 0; i < n; i++)
 {
 str = va_arg(ap, char*);
