@@ -15,25 +15,25 @@ char *str = 0;
 va_start(ap, n);
 
 for (i = 0; i < n; i++)
+  {
+    str = va_arg(ap, char*);
+    if (str == NULL)
+      {
+	printf("(nil)");
+      }
+    printf("%s", str);
+    if (i != n - 1)
+      {
+	if (separator == 0)
+	  {
+	    continue;
+	  }
+	printf("%s", separator);
+      }
+    else
 {
-str = va_arg(ap, char*);
-if (str == NULL)
-{
-printf("(nil)");
+      }
 }
-printf("%s", str);
-if (i < n - 1)
-{
-if (separator == 0)
-{
-continue;
-}
-printf("%s", separator);
-}
-else
-{
-}
-}
-printf("\n");
-va_end(ap);
+ printf("\n");
+ va_end(ap);
 }
