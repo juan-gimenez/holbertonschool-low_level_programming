@@ -22,17 +22,16 @@ for (i = 0; i < n; i++)
 	printf("(nil)");
       }
     printf("%s", str);
-    if (i != n - 1)
-      {
 	if (separator == 0)
 	  {
 	    continue;
 	  }
-	printf("%s", separator);
-      }
-    else
+	if (i != n - 1)
+	  {
+	    printf("%s", separator);
+	  }
+  }
 {
-      }
 }
  printf("\n");
  va_end(ap);
