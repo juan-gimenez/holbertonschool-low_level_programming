@@ -16,16 +16,17 @@ va_start(ap, n);
 
 for (i = 0; i < n; i++)
   {
+    if (separator == 0)
+      {
+	continue;
+      }
     str = va_arg(ap, char*);
     if (str == NULL)
       {
 	printf("(nil)");
       }
     printf("%s", str);
-	if (separator == 0)
-	  {
-	    continue;
-	  }
+       
 	if (i != n - 1)
 	  {
 	    printf("%s", separator);
