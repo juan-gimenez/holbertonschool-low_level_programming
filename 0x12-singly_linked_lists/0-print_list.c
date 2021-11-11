@@ -8,6 +8,7 @@
 size_t print_list(const list_t *h)
 {
 unsigned int numnodes = 0;
+if (h)
 while (h != NULL)
 {
 if (h->str == NULL)
