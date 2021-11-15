@@ -4,22 +4,23 @@
  *@h: listint
  *Return: number of nodes
  */
-size_t print_listint(const listint_t *h);
+size_t print_listint(const listint_t *h)
 {
-  unsigned int numnodes = 0;
-  if (h)
-    while (h != NULL)
-      {
-	if (h->str == NULL)
-	  {
-	    printf("[0] (nil)\n");
-	  }
-	else
-	  {
-	    printf("[%d] %s\n", h->len, h->str);
-	  }
-	h = h->next;
-	numnodes++;
-      }
-  return (numnodes);
+unsigned int numnodes = 0;
+const  listint_t *tmp = h;
+
+while (tmp != NULL)
+{
+if (tmp->next == NULL)
+{
+printf("%d\n", tmp->n);
+}
+else
+{
+printf("%d \n", tmp->n);
+}
+tmp = tmp->next;
+numnodes++;
+}
+return (numnodes);
 }
