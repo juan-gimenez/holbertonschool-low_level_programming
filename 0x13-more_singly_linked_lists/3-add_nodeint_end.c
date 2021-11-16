@@ -16,7 +16,9 @@ current = current->next;
 
 newnode = malloc(sizeof(listint_t));
 if (newnode == NULL)
+{
 return (NULL);
+}
 newnode->n = n;
 newnode->next = NULL;
 
@@ -24,5 +26,5 @@ if (current)
 current->next = newnode;
 else
 *head = newnode;
-return (newnode);
+return (*head);
 }
