@@ -1,0 +1,26 @@
+#include "main.h"
+/**
+ *binary_to_usint - converts binary to unsint
+ *Return:the converted number, or 0
+ *@b: string of 0 and 1 chars
+ */
+unsigned int binary_to_uint(const char *b)
+{
+  int i;
+  unsigned int num;
+
+  num = 0;
+  if (!b)
+    return (num);
+  for (i = 0; b[i]; i++)
+    {
+      if (b[i] == '1' || b[i] == '0')
+	{
+	  num *= 2;
+	  num += (b[i] == '1');
+	}
+      else
+	return (0);
+    }
+  return (num);
+}
