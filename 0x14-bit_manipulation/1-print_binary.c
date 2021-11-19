@@ -1,12 +1,16 @@
 #include "main.h"
 /**
- *binary_to_usint - converts binary to unsint
- *Return:the converted number, or 0
- *@b: string of 0 and 1 chars
+ *print_binary - converts numb to binary
+ *Return: binary
+ *@n: input
  */
 void print_binary(unsigned long int n)
 {
-unsigned long int i;
-for (i = 1 << 31; i > 0; i = i / 2)
-(n & i) ? printf("1") : printf("0");
+if (n < 2)
+_putchar(n + '0');
+else
+{
+print_binary(n >> 1);
+_putchar((n & 1) + '0');
+}
 }
