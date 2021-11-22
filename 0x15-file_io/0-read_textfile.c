@@ -14,14 +14,14 @@ if (!filename)
 {
 return (0);
 }
-file = open(filename, 0_RDONLY);
+file = open(filename, O_RDONLY);
 if (file == -1)
 return (0);
 buffer = malloc(sizeof(char) * (letters));
 if (!buffer)
 return (0);
 nreadb = read(file, buffer, letters);
-nwriteb = write(STDOUT_FILENO, buffer, nrd);
+nwriteb = write(STDOUT_FILENO, buffer, nreadb);
 free(buffer);
 close(file);
 return (nwriteb);
