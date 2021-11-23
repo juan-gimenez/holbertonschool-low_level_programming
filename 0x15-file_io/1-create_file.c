@@ -1,4 +1,4 @@
-y#include "main.h"
+#include "main.h"
 /**
  * create_file - creates a file
  *@filename: file
@@ -22,7 +22,7 @@ while (text_content[index] != '\0')
 {
 index++;
 }
-buff = malloc(index * (sizeof(char));
+buff = malloc(index *sizeof(char));
 if (buff == NULL)
 return (-1);
 openf = open(filename, O_CREAT | O_TRUNC | O_WRONLY, 0700);
