@@ -13,7 +13,7 @@ if (filename == NULL)
 return (-1);
 if (text_content == NULL)
 {
-openf = open(filename, O_CREAT, 0700);
+openf = open(filename, O_CREAT, 0600);
 if (openf == -1)
 return (-1);
 return (1);
@@ -25,7 +25,7 @@ index++;
 buff = malloc(index *sizeof(char));
 if (buff == NULL)
 return (-1);
-openf = open(filename, O_CREAT | O_TRUNC | O_WRONLY, 0700);
+openf = open(filename, O_CREAT | O_TRUNC | O_WRONLY, 0600);
 if (openf == -1)
 return (-1);
 writef = write(openf, text_content, index);
