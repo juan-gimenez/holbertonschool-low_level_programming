@@ -8,15 +8,17 @@
 
 size_t print_dlistint(const dlistint_t *h)
 {
-struct node *current = head;
-if (head == NULL)
+int x = 0;
+const dlistint_t *current = h;
+if (h == NULL)
 {
 return (0);
 }
 while (current != NULL)
 {
 printf("%d\n", h->n);
+x++;
 current = current->next;
 }
-return (current);
+return (x);
 }
