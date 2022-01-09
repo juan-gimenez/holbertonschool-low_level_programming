@@ -27,4 +27,3 @@ temp->next = node;
 node->prev = temp;
 return (node);
 }
-}
