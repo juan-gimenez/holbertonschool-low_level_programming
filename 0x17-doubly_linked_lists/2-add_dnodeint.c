@@ -19,9 +19,7 @@ nwnode->n = n;
 nwnode->prev = NULL;
 nwnode->next = *head;
 if (*head)
-{
 (*head)->prev = nwnode;
 *head = nwnode;
-}
 return (nwnode);
 }
