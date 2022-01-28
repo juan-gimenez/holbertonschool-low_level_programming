@@ -18,7 +18,7 @@ for (x = 0; x < ht->size; x++)
 h = ht->array[x];
 while (h != NULL)
 {
-printf("%s'%s': '%s'", aux, head->key, head->value);
+printf("%s'%s': '%s'", ch, h->key, h->value);
 ch = ", ";
 h = h->next;
 }
